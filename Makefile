@@ -19,7 +19,7 @@ reports/qmd_example.html: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html
 
 reports/qmd_example.pdf: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --to pdf
+	quarto render reports/qmd_example.qmd --output-dir reports
 
 # clean
 clean:

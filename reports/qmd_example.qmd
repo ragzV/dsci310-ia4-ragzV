@@ -8,6 +8,7 @@ format:
     pdf:
         toc: true
         toc-depth: 2
+format-links: true
 execute:
   echo: false        
   warning: false

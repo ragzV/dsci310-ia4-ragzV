@@ -2,15 +2,17 @@
 title: "DSCI 310: Historical Horse Population in Canada"
 author: "Tiffany Timbers & Jordan Bourak"
 format:
-     html:
+    html:
         toc: true
         toc-depth: 2
-        number-sections: true
-bibliography: references.bib
+    pdf:
+        toc: true
+        toc-depth: 2
 execute:
   echo: false        
   warning: false
   message: false
+bibliography: references.bib
 editor: source
 ---
 
@@ -43,8 +45,6 @@ as well as Quarto (@Allaire_Quarto_2022).
 
 ![Horse populations for all provinces in Canada from 1906–1972.](../results/horse_pops_plot.png){#fig-all-provinces}
 
-
-
 We can see from @fig-all-provinces that Ontario, Saskatchewan and Alberta 
 have had the highest horse populations in Canada. 
 All provinces have had a decline in horse populations since 1940. 
@@ -56,7 +56,7 @@ to further support this hypothesis.
 
 Suppose we were interested in looking in more closely at the province 
 with the highest spread (in terms of standard deviation) of horse populations. 
-We present the standard deviations in @tbl-sd.
+We present the standard deviations in Table @tbl-sd.
 
 
 ```{python}
@@ -72,10 +72,9 @@ Note that we define standard deviation (of a sample) as
 
 $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
-Additionally, note that in Table @tbl-sd we consider the sample standard deviation of the number of horses during the same time span as Figure 1.
+Additionally, note that in Table @tbl-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-all-provinces.
 
 ![Horse populations for the province with the largest standard deviation.](../results/horse_pops_plot_largest_sd.png){#fig-largest-sd width="65%"}
-
 
 In @fig-largest-sd zoom in and look at the province of `{python} largest_sd` which had the largest spread of values in terms of standard deviation.
 

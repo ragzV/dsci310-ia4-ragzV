@@ -16,7 +16,7 @@ results/horse_pop_plot_largest_sd.png results/horse_pops_plot.png results/horses
 
 # render quarto report in HTML and PDF
 docs/qmd_example.html docs/qmd_example.pdf: results reports/qmd_example.qmd
-	quarto render reports/qmd_example.qmd --output-dir docs    
+	quarto render reports/qmd_example.qmd --output-dir $(CURDIR)/docs   
 
 
 

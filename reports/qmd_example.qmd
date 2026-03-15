@@ -4,10 +4,9 @@ author: "Tiffany Timbers & Jordan Bourak"
 format:
     html:
         toc: true
-        toc-depth: 2
+        embed-resources: true
     pdf:
         toc: true
-        toc-depth: 2
 format-links: true
 execute:
   echo: false        
